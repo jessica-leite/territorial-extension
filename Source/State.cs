@@ -14,6 +14,7 @@ namespace Codenation.Challenge
 
         public string Acronym { get; set; }
 
+        public double Territory { get; set; }
     }
 
 }

@@ -1,13 +1,16 @@
-using System;
-
 namespace Codenation.Challenge
 {
     public class State
     {
         public State(string name, string acronym)
         {
-            this.Name = name;
-            this.Acronym = acronym;
+            Name = name;
+            Acronym = acronym;
+        }
+
+        public State(string name, string acronym, double territory) : this(name, acronym)
+        {
+            Territory = territory;
         }
 
         public string Name { get; set; }
@@ -16,5 +19,4 @@ namespace Codenation.Challenge
 
         public double Territory { get; set; }
     }
-
 }
